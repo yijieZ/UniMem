@@ -1,5 +1,5 @@
 # UniMem: Redesigning Disaggregated Memory within A Unified Local-Remote Memory Hierarchy
-## Instructions
+## 1 Instructions
 UniMem is implemented in simulation. We use Intel Pin tool to gather the memory access operations of workloads and simulate their run in our system. The workloads include Facebook-ETC, Redis-Rand, YCSB-A/B, Page Rank and Linear Regression in our experiments. These instructions have been tested on a clean Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-177-generic x86_64).
 
 Clone the repository
@@ -8,8 +8,8 @@ git clone https://github.com/yijieZ/UniMem-ATC-2024
 cd UniMem-ATC-2024
 ```
 
-## Setup and Run
-### Setup
+## 2 Setup and Run
+### 2.1 Setup
 We first install the Intel Pin tool. Second, we install redis, memcached, YCSB, Mutilate (for Facebook-ETC) for running workloads. We also download the dataset (Twitter-dataset.zip) for Page Rank. Then, we run the workloads with Intel Pin to gather the memory access address and data size.
 
 You need to execute build.sh in **root** user.
@@ -41,7 +41,7 @@ cd /UniMem-ATC-2024/tool/
 
 1. The "generate.sh" script would take a long time.
 
-### Run
+### 2.2 Run
 First set the environment variables and then run the UniMem.
 
 You also need to execute run.sh in **root** user.
