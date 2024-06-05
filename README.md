@@ -1,11 +1,11 @@
-# UniMem: Redesigning Disaggregated Memory within A Unified Local-Remote Memory Hierarchy
+# UniMem: Redesigning Disaggregated Memory within A Unified Local-Remote Memory Hierarchy (ATC'2024)
 ## 1 Instructions
 UniMem is implemented in simulation. We use Intel Pin tool to gather the memory access operations of workloads and simulate their run in our system. The workloads include Facebook-ETC, Redis-Rand, YCSB-A/B, Page Rank and Linear Regression in our experiments. These instructions have been tested on a clean Ubuntu 20.04.6 LTS (GNU/Linux 5.4.0-177-generic x86_64).
 
 Clone the repository
 ```
-git clone https://github.com/yijieZ/UniMem-ATC-2024
-cd UniMem-ATC-2024
+git clone https://github.com/yijieZ/UniMem
+cd UniMem
 ```
 
 ## 2 Setup and Run
@@ -32,7 +32,7 @@ cd ../scripts
 Now you can execute generate.sh to generate sequences of memory accesses with different workloads. You also need to execute generate.sh in **root** user.
 
 ```
-cd /UniMem-ATC-2024/tool/
+cd /UniMem/tool/
 # The parameter limits the maximum output file size in 10 GB for each workload.
 ./generate.sh 10
 ```
@@ -46,7 +46,7 @@ First set the environment variables and then run the UniMem.
 
 You also need to execute run.sh in **root** user.
 ```
-cd /UniMem-ATC-2024/src/
+cd /UniMem/src/
 ./run.sh
 ```
 
